@@ -25,12 +25,11 @@ public void setup()
 	size(300,300);
 	strokeWeight (1);
 	background(55);
-  frameRate(10000);
+  frameRate(50000);
 }
 public void draw()
 {
   //make fade
-
   if (startY >= 200)
   {
     fill(0,0,0,10);
@@ -44,7 +43,7 @@ public void draw()
   {
     stroke(0,startX,startX);
     endX = startX + (int)((Math.random()*12)-6);
-    endY = startY + (int)(Math.random()*5);
+    endY = startY + (int)(Math.random()*10);
     line (startX, startY, endX, endY);
     startX = endX;
     startY = endY;
